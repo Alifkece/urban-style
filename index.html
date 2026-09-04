@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+
+    <title>Urban Style</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+
+<!-- ================= NAVBAR ================= -->
+
+<nav>
+
+    <a href="#" class="logo">
+        URBAN <span>STYLE</span>
+    </a>
+
+    <div class="menu" id="navMenu">
+
+        <a href="#" onclick="tutupMenu()">Home</a>
+
+        <a href="#produk" onclick="tutupMenu()">
+            Produk
+        </a>
+
+        <a href="#about" onclick="tutupMenu()">
+            About
+        </a>
+
+        <a href="#size" onclick="tutupMenu()">
+            Size Chart
+        </a>
+
+    </div>
+
+   <button class="cart-btn" onclick="bukaCart()">
+    🛒 Cart
+    <span id="jumlahCart">0</span>
+</button>
+
+    <button class="menu-toggle" id="menuToggle" onclick="toggleMenu()" aria-label="Buka menu">
+        <span></span>
+        <span></span>
+        <span></span>
+    </button>
+
+</nav>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero">
+
+    <div class="hero-content">
+
+        <p class="small-title">
+            NEW COLLECTION 2026
+        </p>
+
+        <h1>
+            WEAR YOUR<br>
+            <span>OWN STYLE.</span>
+        </h1>
+
+        <p class="hero-description">
+            Fashion modern, simple, dan nyaman
+            untuk menemani gaya kamu setiap hari.
+        </p>
+
+        <a
+            href="#produk"
+            class="hero-btn">
+
+            SHOP NOW
+
+        </a>
+
+    </div>
+
+
+    <div class="hero-image">
+
+        <div class="hero-logo">
+
+            <b>URBAN</b>
+
+            <span>STYLE</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section
+    class="about"
+    id="about">
+
+    <div class="about-image">
+
+        <div class="about-logo">
+
+            URBAN
+            <span>STYLE</span>
+
+        </div>
+
+    </div>
+
+
+    <div class="about-content">
+
+        <p class="red-text">
+            ABOUT US
+        </p>
+
+        <h2>
+            ABOUT <span>URBAN STYLE</span>
+        </h2>
+
+        <p>
+
+            Urban Style adalah toko fashion
+            yang menghadirkan pakaian modern
+            dengan desain simple dan kekinian.
+
+        </p>
+
+        <p>
+
+            Kami menyediakan berbagai pilihan
+            fashion seperti T-Shirt, Kemeja,
+            Hoodie, Sweater, Dress, Rok,
+            Celana, dan Topi.
+
+        </p>
+
+        <p>
+
+            Urban Style percaya bahwa fashion
+            bukan hanya tentang pakaian,
+            tetapi juga tentang bagaimana
+            kamu menunjukkan gaya dan
+            karakter diri sendiri.
+
+        </p>
+
+        <div class="about-box">
+
+            <div>
+                <b>2026</b>
+                <small>Established</small>
+            </div>
+
+            <div>
+                <b>16+</b>
+                <small>Products</small>
+            </div>
+
+            <div>
+                <b>100%</b>
+                <small>Style</small>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUK ================= -->
+
+<section
+    class="produk-section"
+    id="produk">
+
+    <div class="section-title">
+
+        <p>
+            OUR COLLECTION
+        </p>
+
+        <h2>
+            SHOP <span>PRODUCTS</span>
+        </h2>
+
+    </div>
+
+
+    <!-- FILTER -->
+
+    <div class="filter">
+
+        <button
+            class="active"
+            onclick="filterProduk('semua', this)">
+            Semua
+        </button>
+
+        <button
+            onclick="filterProduk('tshirt', this)">
+            T-Shirt
+        </button>
+
+        <button
+            onclick="filterProduk('kemeja', this)">
+            Kemeja
+        </button>
+
+        <button
+            onclick="filterProduk('hoodie', this)">
+            Hoodie
+        </button>
+
+        <button
+            onclick="filterProduk('sweater', this)">
+            Sweater
+        </button>
+
+        <button
+            onclick="filterProduk('dress', this)">
+            Dress
+        </button>
+
+        <button
+            onclick="filterProduk('rok', this)">
+            Rok
+        </button>
+
+        <button
+            onclick="filterProduk('celana', this)">
+            Celana
+        </button>
+
+        <button
+            onclick="filterProduk('topi', this)">
+            Topi
+        </button>
+
+    </div>
+
+
+    <div class="products">
+
+
+        <!-- TSHIRT 1 -->
+
+        <div
+            class="product"
+            data-category="tshirt">
+
+            <div class="product-img">
+
+                <img
+                    src="image/kaos1.webp"
+                    alt="Black Oversize Tee">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -20%
+                </span>
+
+                <p class="category">
+                    T-SHIRT
+                </p>
+
+                <h3>
+                    Black Oversize Tee
+                </h3>
+
+                <p class="old-price">
+                    Rp 160.000
+                </p>
+
+                <p class="price">
+                    Rp 128.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Black Oversize Tee',
+                    128000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TSHIRT 2 -->
+
+        <div
+            class="product"
+            data-category="tshirt">
+
+            <div class="product-img">
+
+                <img
+                    src="image/kaos2.webp"
+                    alt="White Graphic Tee">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -15%
+                </span>
+
+                <p class="category">
+                    T-SHIRT
+                </p>
+
+                <h3>
+                    White Graphic Tee
+                </h3>
+
+                <p class="old-price">
+                    Rp 150.000
+                </p>
+
+                <p class="price">
+                    Rp 127.500
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'White Graphic Tee',
+                    127500
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- KEMEJA 1 -->
+
+        <div
+            class="product"
+            data-category="kemeja">
+
+            <div class="product-img">
+
+                <img
+                    src="image/kemeja1.webp"
+                    alt="Basic Black Shirt">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -10%
+                </span>
+
+                <p class="category">
+                    KEMEJA
+                </p>
+
+                <h3>
+                    Zenna Navy Brown
+                </h3>
+
+                <p class="old-price">
+                    Rp 200.000
+                </p>
+
+                <p class="price">
+                    Rp 180.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Zenna Navy Brown',
+                    180000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- KEMEJA 2 -->
+
+        <div
+            class="product"
+            data-category="kemeja">
+
+            <div class="product-img">
+
+                <img
+                    src="image/kemeja2.webp"
+                    alt="Red Flannel Shirt">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -15%
+                </span>
+
+                <p class="category">
+                    KEMEJA
+                </p>
+
+                <h3>
+                    Kysona Black Plaid
+                </h3>
+
+                <p class="old-price">
+                    Rp 220.000
+                </p>
+
+                <p class="price">
+                    Rp 187.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Kysona Black Plaid',
+                    187000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- HOODIE 1 -->
+
+        <div
+            class="product"
+            data-category="hoodie">
+
+            <div class="product-img">
+
+                <img
+                    src="image/hoodie1.webp"
+                    alt="Black Urban Hoodie">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -20%
+                </span>
+
+                <p class="category">
+                    HOODIE
+                </p>
+
+                <h3>
+                    Isleen Red Hoodie
+                </h3>
+
+                <p class="old-price">
+                    Rp 320.000
+                </p>
+
+                <p class="price">
+                    Rp 256.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Isleen Red Hoodie',
+                    256000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- HOODIE 2 -->
+
+        <div
+            class="product"
+            data-category="hoodie">
+
+            <div class="product-img">
+
+                <img
+                    src="image/hoodie2.webp"
+                    alt="Grey Street Hoodie">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -15%
+                </span>
+
+                <p class="category">
+                    HOODIE
+                </p>
+
+                <h3>
+                  Cloyre White Hoodie
+                </h3>
+
+                <p class="old-price">
+                    Rp 300.000
+                </p>
+
+                <p class="price">
+                    Rp 255.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Cloyre White Hoodie',
+                    255000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SWEATER 1 -->
+
+        <div
+            class="product"
+            data-category="sweater">
+
+            <div class="product-img">
+
+                <img
+                    src="image/sweater1.webp"
+                    alt="Black Sweater">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -10%
+                </span>
+
+                <p class="category">
+                    SWEATER
+                </p>
+
+                <h3>
+                    Broken White Pink
+                </h3>
+
+                <p class="old-price">
+                    Rp 240.000
+                </p>
+
+                <p class="price">
+                    Rp 216.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Broken White Pink',
+                    216000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- SWEATER 2 -->
+
+        <div
+            class="product"
+            data-category="sweater">
+
+            <div class="product-img">
+
+                <img
+                    src="image/sweater2.webp"
+                    alt="White Urban Sweater">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -15%
+                </span>
+
+                <p class="category">
+                    SWEATER
+                </p>
+
+                <h3>
+                    Broken White Brown
+                </h3>
+
+                <p class="old-price">
+                    Rp 250.000
+                </p>
+
+                <p class="price">
+                    Rp 212.500
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Broken White Brown',
+                    212500
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DRESS 1 -->
+
+        <div
+            class="product"
+            data-category="dress">
+
+            <div class="product-img">
+
+                <img
+                    src="image/black dress.webp"
+                    alt="Black Casual Dress">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -20%
+                </span>
+
+                <p class="category">
+                    DRESS
+                </p>
+
+                <h3>
+                    Black Casual Dress
+                </h3>
+
+                <p class="old-price">
+                    Rp 300.000
+                </p>
+
+                <p class="price">
+                    Rp 240.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Black Casual Dress',
+                    240000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- DRESS 2 -->
+
+        <div
+            class="product"
+            data-category="dress">
+
+            <div class="product-img">
+
+                <img
+                    src="image/RED DRESS.webp"
+                    alt="Red Urban Dress">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -15%
+                </span>
+
+                <p class="category">
+                    DRESS
+                </p>
+
+                <h3>
+                    Red Urban Dress
+                </h3>
+
+                <p class="old-price">
+                    Rp 300.000
+                </p>
+
+                <p class="price">
+                    Rp 255.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Red Urban Dress',
+                    255000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROK 1 -->
+
+        <div
+            class="product"
+            data-category="rok">
+
+            <div class="product-img">
+
+                <img
+                    src="image/rok black.webp"
+                    alt="Black Skirt">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -10%
+                </span>
+
+                <p class="category">
+                    ROK
+                </p>
+
+                <h3>
+                    Black Skirt
+                </h3>
+
+                <p class="old-price">
+                    Rp 180.000
+                </p>
+
+                <p class="price">
+                    Rp 162.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Black Skirt',
+                    162000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ROK 2 -->
+
+        <div
+            class="product"
+            data-category="rok">
+
+            <div class="product-img">
+
+                <img
+                    src="image/mini-skirt-red.jpg"
+                    alt="Red Mini Skirt">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -15%
+                </span>
+
+                <p class="category">
+                    ROK
+                </p>
+
+                <h3>
+                    Red Mini Skirt
+                </h3>
+
+                <p class="old-price">
+                    Rp 190.000
+                </p>
+
+                <p class="price">
+                    Rp 161.500
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Red Mini Skirt',
+                    161500
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CELANA 1 -->
+
+        <div
+            class="product"
+            data-category="celana">
+
+            <div class="product-img">
+
+                <img
+                    src="image/celana1.webp"
+                    alt="Black Cargo Pants">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -20%
+                </span>
+
+                <p class="category">
+                    CELANA
+                </p>
+
+                <h3>
+                    Drestia Indigo Pants
+                </h3>
+
+                <p class="old-price">
+                    Rp 250.000
+                </p>
+
+                <p class="price">
+                    Rp 200.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Drestia Indigo Pants',
+                    200000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- CELANA 2 -->
+
+        <div
+            class="product"
+            data-category="celana">
+
+            <div class="product-img">
+
+                <img
+                    src="image/celana2.webp"
+                    alt="Beige Cargo Pants">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -15%
+                </span>
+
+                <p class="category">
+                    CELANA
+                </p>
+
+                <h3>
+                    Stevia Camo Pants
+                </h3>
+
+                <p class="old-price">
+                    Rp 240.000
+                </p>
+
+                <p class="price">
+                    Rp 204.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Stevia Camo Pants',
+                    204000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOPI 1 -->
+
+        <div
+            class="product"
+            data-category="topi">
+
+            <div class="product-img">
+
+                <img
+                    src="image/topi1.webp"
+                    alt="Black Urban Cap">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -20%
+                </span>
+
+                <p class="category">
+                    TOPI
+                </p>
+
+                <h3>
+                    Refoza Purple Cap
+                </h3>
+
+                <p class="old-price">
+                    Rp 120.000
+                </p>
+
+                <p class="price">
+                    Rp 96.000
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Refoza Purple Cap',
+                    96000
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- TOPI 2 -->
+
+        <div
+            class="product"
+            data-category="topi">
+
+            <div class="product-img">
+
+                <img
+                    src="image/topi2.webp"
+                    alt="Red Street Cap">
+
+            </div>
+
+            <div class="product-info">
+
+                <span class="discount">
+                    -15%
+                </span>
+
+                <p class="category">
+                    TOPI
+                </p>
+
+                <h3>
+                    Yellow Purple Plaid Cap
+                </h3>
+
+                <p class="old-price">
+                    Rp 130.000
+                </p>
+
+                <p class="price">
+                    Rp 110.500
+                </p>
+
+                <button
+                    class="buy"
+                    onclick="beliProduk(
+                    'Yellow Purple Plaid Cap',
+                    110500
+                    )">
+
+                    BELI
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= SIZE ================= -->
+
+<section
+    class="size-section"
+    id="size">
+
+    <div class="section-title">
+
+        <p>
+            SIZE GUIDE
+        </p>
+
+        <h2>
+            SIZE <span>CHART</span>
+        </h2>
+
+    </div>
+
+
+    <table>
+
+        <tr>
+            <th>Size</th>
+            <th>Lebar</th>
+            <th>Panjang</th>
+        </tr>
+
+        <tr>
+            <td>S</td>
+            <td>48 cm</td>
+            <td>68 cm</td>
+        </tr>
+
+        <tr>
+            <td>M</td>
+            <td>51 cm</td>
+            <td>70 cm</td>
+        </tr>
+
+        <tr>
+            <td>L</td>
+            <td>54 cm</td>
+            <td>72 cm</td>
+        </tr>
+
+        <tr>
+            <td>XL</td>
+            <td>57 cm</td>
+            <td>74 cm</td>
+        </tr>
+
+    </table>
+
+</section>
+
+
+<!-- ================= MODAL UKURAN ================= -->
+
+<div
+    class="modal"
+    id="sizeModal">
+
+    <div class="modal-box">
+
+        <button
+            class="close"
+            onclick="tutupUkuran()">
+
+            ×
+
+        </button>
+
+        <p class="modal-label">
+            PILIH UKURAN
+        </p>
+
+        <h2 id="namaProduk">
+            Produk
+        </h2>
+
+        <p
+            class="modal-price"
+            id="hargaProduk">
+
+            Rp 0
+
+        </p>
+
+        <b>
+            Pilih Size
+        </b>
+
+
+        <div class="sizes">
+
+            <button
+                onclick="pilihUkuran('S',this)">
+                S
+            </button>
+
+            <button
+                onclick="pilihUkuran('M',this)">
+                M
+            </button>
+
+            <button
+                onclick="pilihUkuran('L',this)">
+                L
+            </button>
+
+            <button
+                onclick="pilihUkuran('XL',this)">
+                XL
+            </button>
+
+        </div>
+
+
+        <p id="infoUkuran">
+            Silakan pilih ukuran.
+        </p>
+
+
+        <button
+            class="add-cart"
+            onclick="tambahKeranjang()">
+
+            TAMBAH KE KERANJANG
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= MODAL CART ================= -->
+
+<div
+    class="modal"
+    id="cartModal">
+
+    <div class="modal-box">
+
+        <button
+            class="close"
+            onclick="tutupCart()">
+
+            ×
+
+        </button>
+
+        <p class="modal-label">
+            SHOPPING CART
+        </p>
+
+        <h2>
+            Keranjang
+        </h2>
+
+
+        <div id="isiKeranjang">
+
+            Keranjang masih kosong.
+
+        </div>
+
+
+        <div class="total">
+
+            <b>
+                Total
+            </b>
+
+            <b id="totalHarga">
+                Rp 0
+            </b>
+
+        </div>
+
+
+        <button
+            class="checkout"
+            onclick="checkout()">
+
+            CHECKOUT
+
+        </button>
+
+    </div>
+
+</div>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <h2>
+        URBAN <span>STYLE</span>
+    </h2>
+
+    <p>
+        Simple style. Your own identity.
+    </p>
+
+    <small>
+        © 2026 Urban Style
+    </small>
+
+</footer>
+
+
+<script src="script.js"></script>
+</body>
+
+</html>
