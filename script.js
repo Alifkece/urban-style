@@ -214,7 +214,7 @@ function hapusCart(index) {
 }
 
 
-var NOMOR_WA_TOKO = "62895351009104"; // +62 895-3510-09104
+var NOMOR_WA_TOKO = "62895351009194"; // +62 895-3510-09104
 
 function checkout() {
 
